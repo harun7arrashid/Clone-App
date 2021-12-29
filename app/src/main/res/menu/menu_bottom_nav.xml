@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_home"
+        android:icon="@drawable/ic_home"
+        android:title="Home"/>
+
+    <item
+        android:id="@+id/navigation_order"
+        android:icon="@drawable/ic_order"
+        android:title="Order"/>
+
+    <item
+        android:id="@+id/navigation_package"
+        android:icon="@drawable/ic_paket"
+        android:title="Paket"/>
+
+    <item
+        android:id="@+id/navigation_prepaid"
+        android:icon="@drawable/ic_prepaid"
+        android:title="Prepaid"/>
+
+    <item
+        android:id="@+id/navigation_account"
+        android:icon="@drawable/ic_account"
+        android:title="Akun"/>
+
+</menu>
