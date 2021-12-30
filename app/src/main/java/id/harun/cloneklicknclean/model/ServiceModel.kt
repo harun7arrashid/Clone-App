@@ -1,5 +1,9 @@
 package id.harun.cloneklicknclean.model
 
+import android.os.Parcelable
+import kotlinx.parcelize.Parcelize
+
+@Parcelize
 data class ServiceModel(
     val id: Int? = 0,
     val title: String? = "",
@@ -10,4 +14,4 @@ data class ServiceModel(
     val desc: String? = "",
     val estimasi: String? = "",
     val urlYoutube: String? = ""
-)
+) : Parcelable

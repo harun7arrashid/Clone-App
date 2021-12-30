@@ -57,6 +57,7 @@
         </androidx.cardview.widget.CardView>
 
         <Button
+            android:id="@+id/btn_disinfektan"
             android:layout_width="80dp"
             android:layout_height="20dp"
             android:drawableStart="@drawable/ic_add"
