@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_navigation"
+    app:startDestination="@id/navigation_home">
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="id.harun.cloneklicknclean.home.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" />
+    <fragment
+        android:id="@+id/navigation_order"
+        android:name="id.harun.cloneklicknclean.order.OrderFragment"
+        android:label="fragment_order"
+        tools:layout="@layout/fragment_order" />
+    <fragment
+        android:id="@+id/navigation_package"
+        android:name="id.harun.cloneklicknclean.paket.PaketFragment"
+        android:label="fragment_paket"
+        tools:layout="@layout/fragment_paket" />
+    <fragment
+        android:id="@+id/navigation_prepaid"
+        android:name="id.harun.cloneklicknclean.prepaid.PrepaidFragment"
+        android:label="fragment_prepaid"
+        tools:layout="@layout/fragment_prepaid" />
+    <fragment
+        android:id="@+id/navigation_account"
+        android:name="id.harun.cloneklicknclean.account.AccountFragment"
+        android:label="fragment_account"
+        tools:layout="@layout/fragment_account" />
+</navigation>
