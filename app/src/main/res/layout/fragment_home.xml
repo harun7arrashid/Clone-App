@@ -52,11 +52,56 @@
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/rv_home"
             android:layout_width="match_parent"
-            android:layout_height="0dp"
+            android:layout_height="wrap_content"
             app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+            app:layout_constraintTop_toBottomOf="@id/img_banner"
             app:spanCount="3"
-            tools:listitem="@layout/list_item_service"
-            app:layout_constraintTop_toBottomOf="@id/img_banner"/>
+            tools:listitem="@layout/list_item_service" />
+
+        <com.google.android.material.chip.ChipGroup
+            android:id="@+id/chip_group_action"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#EAEAEA"
+            android:padding="10dp"
+            app:singleSelection="true"
+            app:chipSpacingHorizontal="10dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/rv_home"
+            app:singleLine="true">
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chip_all"
+                style="@style/Widget.MaterialComponents.Chip.Filter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="All"
+                android:textColor="@color/white"
+                app:checkedIconEnabled="false"
+                app:chipBackgroundColor="@color/teal_200"
+                app:chipStrokeWidth="0.3dp" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chip_promo"
+                style="@style/CustomChipStyleAction"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Promo"
+                app:checkedIconEnabled="false"
+                app:chipStrokeWidth="0.3dp" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chip_partnership"
+                style="@style/CustomChipStyleAction"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Partnership"
+                app:checkedIconEnabled="false"
+                app:chipStrokeWidth="0.3dp" />
+
+        </com.google.android.material.chip.ChipGroup>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
