@@ -15,7 +15,7 @@ object DataDummy {
                 "Pembersihan umum dengan Disinfektan",
                 "Layanan pembersihan rumah profesional yang meliputi mengelap debu, mengepel lantai, merapikan kamar tidur dan membersihkan kamar mandi.",
                 "*Estimasi pengerjaan yakni 30 menit untuk setiap ruangan.",
-                "https://www.youtube.com/watch?v=g2sW35RdafU"
+                "g2sW35RdafU"
             )
         )
 
@@ -30,7 +30,7 @@ object DataDummy {
                 "Layanan penyemprotan ruangan dengan cairan sterilisasi untuk membunuh kuman dan bakteri. Ruangan disterilisasi dengan cara disemprotkan cairan sterilisasi pada seluruh bagian ruangan dengan alat khusus ULV (Ultra Low Volume) yang berupa uap untuk membunuh kuman, bakteri dan virus. Ruangan setelah dilakukan sterilisasi tidak dapat digunakan selama 2 jam.",
                 "*Estimasi pengerjaan yakni 30 menit untuk setiap 50m2 ruangan.\n" +
                         "*Mesin desinfeksi berdaya 1400 Watt.",
-                "https://www.youtube.com/watch?v=AGosK6iXX_U"
+                "AGosK6iXX_U"
             )
         )
 
@@ -44,7 +44,7 @@ object DataDummy {
                 "Cuci Mobil / Fogging Disinfektan",
                 "Layanan cuci mobil mulai dari eksterior, pembersihan interior, semi ban, wax hingga perawatan kaca. Pilih layanan sesuai kebutuhan dan biarkan teknisi KliknClean mengerjakannya.",
                 "*Estimasi pengerjaan yakni 60 menit untuk setiap unit mobil.",
-                "https://www.youtube.com/watch?v=laPC32ie0pk"
+                "laPC32ie0pk"
             )
         )
 
@@ -57,8 +57,7 @@ object DataDummy {
                 "",
                 "Cuci Kasur, Sofa & Karpet",
                 "Layanan pencucian yang diperuntukkan karpet, sofa, kursi makan dan kursi kerja guna mengangkat noda, debu dan tungau secara maksimal.",
-                "*Noda tidak dapat hilang 100%, bergantung pada kondisi noda.",
-                ""
+                "*Noda tidak dapat hilang 100%, bergantung pada kondisi noda."
             )
         )
 
@@ -72,7 +71,7 @@ object DataDummy {
                 "Vakum Tungau",
                 "Layanan Vakum Tungau atau sedot tungau yang diperuntukkan kasur, sofa, karpet dan gorden dengan hitungan per/item. Dengan daya hisap mesin sebesar 2000rpm, debu dan tungau pasti terangkat maksimal.",
                 "*Tidak dapat mengangkat noda",
-                "https://www.youtube.com/watch?v=JgG1Kibau2w"
+                "JgG1Kibau2w"
             )
         )
 
@@ -88,7 +87,7 @@ object DataDummy {
                 "*Tangga sudah disediakan oleh KliknClean.\n" +
                         "\n" +
                         "*Pelanggan akan dikenakan biaya sebesar Rp 50.000 untuk biaya pengecekan atau jika kondisi AC tidak memungkinkan dilakukan pencucian AC, isi freon, tambah freon, cuci AC besar (overhoul).",
-                "https://www.youtube.com/watch?v=mLfGjoq4ps4&t=2s"
+                "mLfGjoq4ps4&t=2s"
             )
         )
 
@@ -101,7 +100,6 @@ object DataDummy {
                 "",
                 "Layanan Paket",
                 "Layanan paket kebersihan yang dibuat sesuai dengan kebutuhan Anda dan harga yang terjangkau.",
-                "",
                 ""
             )
         )
@@ -132,7 +130,7 @@ object DataDummy {
                         "\n" +
                         "Pilih sesuai kebutuhan Anda.",
                 "*Estimasi pengerjaan yakni 20 menit untuk setiap 10m2 ruangan.",
-                "https://www.youtube.com/watch?v=5xz5rkC_E7k"
+                "5xz5rkC_E7k"
             )
         )
 
@@ -145,8 +143,7 @@ object DataDummy {
                 "",
                 "Setrika",
                 "Layanan setrika terbaik untuk pakaian Anda. Minimal pemesanan dilakukan selama 2 jam. Jumlah pakaian yang dapat disetrika selama 1 jam adalah 10 - 15 potong",
-                "*Disesuaikan dengan jenis, model & bahan pakaian.",
-                ""
+                "*Disesuaikan dengan jenis, model & bahan pakaian."
             )
         )
 
@@ -160,7 +157,7 @@ object DataDummy {
                 "Kristalisasi Marmer / Granit",
                 "Kristalisasi bertujuan untuk mengembalikan warna asli marmer / granit dan membuat permukaan menjadi mengkilap serta keras. Kristalisasi juga bertujuan untuk menghindari noda karena resapan kimiawinya membentuk lapisan film sebagai pelindung permukaan lantai dan membuat lantai menjadi anti slip dan anti debu sehingga sangat mengurangi kebutuhan perawatan lantai.",
                 "",
-                "https://www.youtube.com/watch?v=QIIqOsdJrAA"
+                "QIIqOsdJrAA"
             )
         )
 

@@ -13,5 +13,5 @@ data class ServiceModel(
     val titleDesc: String? = "",
     val desc: String? = "",
     val estimasi: String? = "",
-    val urlYoutube: String? = ""
+    val urlYoutube: String? = null
 ) : Parcelable

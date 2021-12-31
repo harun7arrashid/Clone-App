@@ -1,78 +1,83 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/dialog_detail_service"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:paddingStart="15dp"
-    android:paddingEnd="15dp"
     android:background="@drawable/bg_bottom_sheet">
 
-    <ImageView
-        android:id="@+id/img_minizame"
-        android:layout_width="70dp"
-        android:layout_height="40dp"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        android:src="@drawable/ic_minizame"/>
-
-    <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
-        android:id="@+id/youtube_player_dialog"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        app:videoId="S0Q4gqBUs7c"
-        app:autoPlay="true"
-        android:layout_marginTop="20dp"
-        app:layout_constraintTop_toBottomOf="@id/img_minizame"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"/>
-
-    <TextView
-        android:id="@+id/tv_title_desc"
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="14dp"
-        android:textColor="@color/black"
-        android:textStyle="bold"
-        app:layout_constraintTop_toBottomOf="@id/youtube_player_dialog"
-        tools:text="Pembersihan Umum"/>
+        android:paddingStart="15dp"
+        android:paddingEnd="15dp">
 
-    <TextView
-        android:id="@+id/tv_desc"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textColor="@color/black"
-        android:layout_marginTop="12dp"
-        app:layout_constraintTop_toBottomOf="@id/tv_title_desc"
-        tools:text="Layanan pembasmian dan pengedalian hama pengganggu dan perusak lingkungan sekitar Anda. Pengerjaan dilakukan oleh petugas professional dan terpercaya KliknClean.
-"/>
+        <ImageView
+            android:id="@+id/img_minizame"
+            android:layout_width="70dp"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_minizame"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:id="@+id/tv_estimasi"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textColor="@color/black"
-        android:layout_marginTop="12dp"
-        android:textStyle="italic|bold"
-        app:layout_constraintTop_toBottomOf="@id/tv_desc"
-        tools:text="*Estimasi pengerjaan yakni 20 menit untuk setiap 10m2 ruangan"/>
+        <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
+            android:id="@+id/youtube_player_dialog"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            app:autoPlay="true"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/img_minizame"
+            app:videoId="" />
 
-    <Button
-        android:id="@+id/btn_order_now"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:text="Pesan Sekarang"
-        android:textAllCaps="false"
-        android:textSize="18sp"
-        android:textColor="@color/white"
-        android:background="@drawable/bg_button_order"
-        android:layout_marginBottom="15dp"
-        android:layout_marginTop="14dp"
-        app:layout_constraintTop_toBottomOf="@id/tv_estimasi"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"/>
+        <TextView
+            android:id="@+id/tv_title_desc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            app:layout_constraintTop_toBottomOf="@id/youtube_player_dialog"
+            tools:text="Pembersihan Umum" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <TextView
+            android:id="@+id/tv_desc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:textColor="@color/black"
+            app:layout_constraintTop_toBottomOf="@id/tv_title_desc"
+            tools:text="Layanan pembasmian dan pengedalian hama pengganggu dan perusak lingkungan sekitar Anda. Pengerjaan dilakukan oleh petugas professional dan terpercaya KliknClean." />
+
+        <TextView
+            android:id="@+id/tv_estimasi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:textColor="@color/black"
+            android:textStyle="italic|bold"
+            app:layout_constraintTop_toBottomOf="@id/tv_desc"
+            tools:text="*Estimasi pengerjaan yakni 20 menit untuk setiap 10m2 ruangan" />
+
+        <Button
+            android:id="@+id/btn_order_now"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/bg_button_order"
+            android:text="Pesan Sekarang"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_estimasi" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
