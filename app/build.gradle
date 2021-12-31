@@ -62,4 +62,7 @@ dependencies {
 
     // Image Slider
     implementation 'com.github.denzcoskun:ImageSlideshow:0.1.0'
+
+    // Youtube
+    implementation 'com.pierfrancescosoffritti.androidyoutubeplayer:core:10.0.1'
 }

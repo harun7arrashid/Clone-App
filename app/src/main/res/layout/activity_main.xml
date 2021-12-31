@@ -9,6 +9,7 @@
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottom_nav"
         android:layout_width="0dp"
+        app:labelVisibilityMode="labeled"
         android:layout_height="wrap_content"
         android:background="@color/white"
         app:itemIconTint="@drawable/color_bottom_nav"
@@ -29,6 +30,5 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:navGraph="@navigation/main_navigation"/>
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>
