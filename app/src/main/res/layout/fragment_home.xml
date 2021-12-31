@@ -66,7 +66,6 @@
             android:padding="10dp"
             app:singleSelection="true"
             app:chipSpacingHorizontal="10dp"
-            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/rv_home"
@@ -102,6 +101,21 @@
                 app:chipStrokeWidth="0.3dp" />
 
         </com.google.android.material.chip.ChipGroup>
+
+        <com.denzcoskun.imageslider.ImageSlider
+            android:id="@+id/img_slider"
+            android:layout_width="match_parent"
+            android:layout_height="210dp"
+            app:iss_auto_cycle="false"
+            app:iss_delay="0"
+            app:iss_placeholder="@android:color/darker_gray"
+            app:iss_error_image="@android:color/darker_gray"
+            app:iss_corner_radius="5"
+            app:iss_selected_dot="@drawable/selected_dot"
+            app:iss_unselected_dot="@drawable/unselected_dot"
+            app:iss_period="1000"
+            tools:ignore="MissingConstraints"
+            app:layout_constraintTop_toBottomOf="@id/chip_group_action"/>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

@@ -7,6 +7,8 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
 import androidx.lifecycle.ViewModelProvider
+import com.denzcoskun.imageslider.constants.ScaleTypes
+import com.denzcoskun.imageslider.models.SlideModel
 import id.harun.cloneklicknclean.R
 import id.harun.cloneklicknclean.databinding.FragmentHomeBinding
 import id.harun.cloneklicknclean.model.ServiceModel
@@ -19,6 +21,9 @@ class HomeFragment : Fragment() {
 
     private lateinit var listServices: List<ServiceModel>
     private lateinit var viewModel: HomeViewModel
+
+    private val imageList = ArrayList<SlideModel>()
+
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
         _binding = FragmentHomeBinding.inflate(inflater, container, false)
@@ -33,6 +38,7 @@ class HomeFragment : Fragment() {
             listServices = viewModel.services
 
             setupRecyclerView()
+            imageSlider()
             setupChip()
         }
     }
@@ -49,7 +55,41 @@ class HomeFragment : Fragment() {
     }
 
     private fun setupChip() {
+        val imgSlider = binding?.imgSlider
+
         val all = binding?.chipAll
-        all?.isCheckable = true
+        val promo = binding?.chipPromo
+        val partner = binding?.chipPartnership
+
+        all?.setOnClickListener {
+            imageList.clear()
+            imageList.add(SlideModel("https://s3-ap-southeast-1.amazonaws.com/kliknclean/vouchers/promoapp_promo50.png"))
+            imageList.add(SlideModel("https://s3-ap-southeast-1.amazonaws.com/kliknclean/vouchers/promoapp_Des2021.png"))
+
+            imgSlider?.setImageList(imageList, ScaleTypes.CENTER_CROP)
+        }
+
+        promo?.setOnClickListener {
+            imageList.clear()
+            imageList.add(SlideModel("https://s3-ap-southeast-1.amazonaws.com/kliknclean/vouchers/promoapp_promo50.png"))
+
+            imgSlider?.setImageList(imageList, ScaleTypes.CENTER_CROP)
+        }
+
+        partner?.setOnClickListener {
+            imageList.clear()
+            imageList.add(SlideModel("https://s3-ap-southeast-1.amazonaws.com/kliknclean/vouchers/promoapp_Des2021.png"))
+
+            imgSlider?.setImageList(imageList, ScaleTypes.CENTER_CROP)
+        }
+    }
+
+    private fun imageSlider() {
+        val imgSlider = binding?.imgSlider
+
+        imageList.add(SlideModel("https://s3-ap-southeast-1.amazonaws.com/kliknclean/vouchers/promoapp_promo50.png"))
+        imageList.add(SlideModel("https://s3-ap-southeast-1.amazonaws.com/kliknclean/vouchers/promoapp_Des2021.png"))
+
+        imgSlider?.setImageList(imageList, ScaleTypes.CENTER_CROP)
     }
 }
