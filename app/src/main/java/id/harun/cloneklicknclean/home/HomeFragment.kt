@@ -9,6 +9,7 @@ import android.widget.Button
 import android.widget.ImageView
 import android.widget.TextView
 import android.widget.Toast
+import androidx.fragment.app.FragmentManager
 import androidx.lifecycle.ViewModelProvider
 import com.denzcoskun.imageslider.constants.ScaleTypes
 import com.denzcoskun.imageslider.models.SlideModel
@@ -47,6 +48,33 @@ class HomeFragment : Fragment() {
             setupRecyclerView()
             imageSlider()
             setupChip()
+            //initListener()
+        }
+    }
+
+    private fun initListener() {
+        binding?.imgBanner?.setOnClickListener {
+//            val view = layoutInflater.inflate(R.layout.dialog_banner, null)
+//            val dialog = BottomSheetDialog(requireContext(), R.style.BottomSheetDialogTheme)
+//            dialog.apply { setContentView(view) }
+//
+//            val youtube = view.findViewById<YouTubePlayerView>(R.id.youtube_player)
+//            val btn = view.findViewById<Button>(R.id.btn_order_now)
+//
+//            activity?.lifecycle?.addObserver(youtube)
+//            youtube.addYouTubePlayerListener(object : AbstractYouTubePlayerListener() {
+//                override fun onReady(youTubePlayer: YouTubePlayer) {
+//                    youTubePlayer.loadVideo("P8iLMHtzjJA", 0F)
+//                }
+//            })
+//
+//            btn.setOnClickListener {
+//                Toast.makeText(activity, "Berhasil dipesan", Toast.LENGTH_SHORT).show()
+//                dialog.dismiss()
+//            }
+//
+//            dialog.show()
+            Toast.makeText(context, "Mamamamama", Toast.LENGTH_LONG).show()
         }
     }
 

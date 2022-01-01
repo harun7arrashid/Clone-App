@@ -9,6 +9,7 @@ import androidx.navigation.ui.setupActionBarWithNavController
 import androidx.navigation.ui.setupWithNavController
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import id.harun.cloneklicknclean.databinding.ActivityMainBinding
+import id.harun.cloneklicknclean.home.HomeDialogFragment
 
 class MainActivity : AppCompatActivity() {
 
@@ -19,6 +20,10 @@ class MainActivity : AppCompatActivity() {
         setContentView(binding.root)
         setupNavController()
         supportActionBar?.hide()
+
+        HomeDialogFragment().apply {
+            show(supportFragmentManager, "dt")
+        }
     }
 
     private fun setupNavController() {

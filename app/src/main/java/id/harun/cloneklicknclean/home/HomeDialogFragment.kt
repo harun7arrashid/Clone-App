@@ -5,11 +5,14 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Toast
 import com.google.android.material.bottomsheet.BottomSheetDialogFragment
+import com.pierfrancescosoffritti.androidyoutubeplayer.core.player.YouTubePlayer
+import com.pierfrancescosoffritti.androidyoutubeplayer.core.player.listeners.AbstractYouTubePlayerListener
 import id.harun.cloneklicknclean.R
 import id.harun.cloneklicknclean.databinding.FragmentHomeDialogBinding
 
-class HomeDialogFragment(val itemClick: OnItemClick) : BottomSheetDialogFragment() {
+class HomeDialogFragment() : BottomSheetDialogFragment() {
 
     private lateinit var binding: FragmentHomeDialogBinding
 
@@ -20,10 +23,17 @@ class HomeDialogFragment(val itemClick: OnItemClick) : BottomSheetDialogFragment
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-
-    }
-
-    interface OnItemClick {
-        fun onItemClick()
+//        val youtube = binding.youtubePlayer
+//        activity?.lifecycle?.addObserver(youtube)
+//        youtube.addYouTubePlayerListener(object : AbstractYouTubePlayerListener() {
+//            override fun onReady(youTubePlayer: YouTubePlayer) {
+//                youTubePlayer.loadVideo("P8iLMHtzjJA", 0F)
+//            }
+//        })
+//
+//        binding.btnOrderNow.setOnClickListener {
+//            Toast.makeText(activity, "Pesanan sedang diproses", Toast.LENGTH_SHORT).show()
+//            this.dismiss()
+//        }
     }
 }
