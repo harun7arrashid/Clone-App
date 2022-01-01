@@ -79,7 +79,7 @@
                 android:text="All"
                 android:textColor="@color/white"
                 app:checkedIconEnabled="false"
-                app:chipBackgroundColor="@color/teal_200"
+                app:chipBackgroundColor="@color/cyan"
                 app:chipStrokeWidth="0.3dp" />
 
             <com.google.android.material.chip.Chip

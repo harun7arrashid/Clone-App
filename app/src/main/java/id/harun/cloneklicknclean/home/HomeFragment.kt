@@ -6,6 +6,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
+import android.widget.ImageView
 import android.widget.TextView
 import android.widget.Toast
 import androidx.lifecycle.ViewModelProvider
@@ -66,6 +67,7 @@ class HomeFragment : Fragment() {
         dialog.apply {
             setContentView(view)
         }
+        val minizame = view.findViewById<ImageView>(R.id.img_minizame)
         val youtube  = view.findViewById<YouTubePlayerView>(R.id.youtube_player_dialog)
         val title    = view.findViewById<TextView>(R.id.tv_title_desc)
         val desc     = view.findViewById<TextView>(R.id.tv_desc)
@@ -90,6 +92,8 @@ class HomeFragment : Fragment() {
             Toast.makeText(activity, "Berhasil dipesan", Toast.LENGTH_SHORT).show()
             dialog.dismiss()
         }
+
+        minizame.setOnClickListener { dialog.dismiss() }
 
         dialog.show()
     }
